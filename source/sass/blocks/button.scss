@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 21px;
+  min-height: 56px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $base-white;
+  border: 2px solid $base-white;
+
+  cursor: pointer;
+
+  @media (min-width: $desktop) {
+    &:hover {
+      color: $base-blue;
+      background-color: $base-white;
+    }
+
+    &:focus {
+      color: $base-blue;
+      background-color: $focus-white;
+      border: 2px solid $black;
+    }
+
+    &:active {
+      color: $base-darker;
+      background-color: $base-white;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      border: 2px solid $base-white;
+    }
+  }
+}

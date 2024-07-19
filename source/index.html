@@ -9,12 +9,242 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
+    <main>
+      <section class="hero" data-test="hero">
+        <header class="hero__header container">
+          <img class="hero__logo" src="/__spritemap#sprite-logo-view" width="100" height="54" alt="SUPERGYM.">
+          <a class="hero__phone link" href="tel:+78005555555">8 800 555-55-55</a>
+        </header>
+        <div class="hero__wrapper container">
+          <div class="hero__info">
+            <p class="hero__city">Омск</p>
+            <p class="hero__text">
+              <span>Тренажёрный зал</span>
+              <span>Групповые занятия</span>
+              <span>Кардио-зона</span>
+            </p>
+            <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
+          </div>
+          <picture class="hero__image">
+            <source type="image/webp" media="(min-width: 1365px)" srcset="img/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x" width="500" height="524">
+            <img src="img/hero-tablet@1x.webp" srcset="img/hero-tablet@2x.webp 2x" width="324" height="390" alt="Тренер SUPERGYM.">
+          </picture>
+          <a class="hero__button button link" href="#">Купить абонемент</a>
+        </div>
+      </section>
+
+      <section class="about" data-test="about">
+        <h2 class="about__title title">Тренажёрный зал</h2>
+        <p class="about__lead lead">Просторный зал площадью 900 кв/м</p>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <img src="zal.jpg" alt="Тренажёрный зал.">
+        <!-- <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" frameborder="0"></iframe> -->
+      </section>
+
+      <section class="price" data-test="price">
+        <h2 class="price__title title">Абонементы</h2>
+        <ul class="price__tabs">
+          <li class="price__tab">1 месяц</li>
+          <li class="price__tab">6 месяцев</li>
+          <li class="price__tab">12 месяцев</li>
+        </ul>
+        <ul class="price__tabs-item">
+          <li class="price__tab-item tab-card">
+            <h3 class="tab-card">С тренером</h3>
+            <p class="tab-card__session">12 занятий</p>
+            <p class="tab-card__price">5000</p>
+            <a href="#" class="tab-card__button button">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item tab-card">
+            <h3 class="tab-card">Дневной</h3>
+            <p class="tab-card__session">с 8:00 до 17:00</p>
+            <p class="tab-card__price">1700</p>
+            <a href="#" class="tab-card__button button">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item tab-card">
+            <h3 class="tab-card">Полный день</h3>
+            <p class="tab-card__session">с 8:00 до 22:00</p>
+            <p class="tab-card__price">2700</p>
+            <a href="#" class="tab-card__button button">Купить абонемент</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="games" data-test="games">
+        <div class="games__banner banner">
+          <h2 class="banner__title">SUPER GAMES</h2>
+          <table class="banner__table">
+            <tr>
+              <th>Дата</th>
+              <th>Время</th>
+            </tr>
+            <tr>
+              <td><span>7</span><span>Марта</span><span>2019</span></td>
+              <td>12:00</td>
+            </tr>
+          </table>
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a href="#" class="banner__button button">заполнить заявку</a>
+          <img src="chel.jpg" alt="Т.">
+        </div>
+        <div class="games__juri juri" data-test="juri">
+          <h2 class="juri__title title">Жюри</h2>
+          <ul class="juri__card-list">
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+            <li class="juri__card">
+              <img src="anna.jpg" alt="Анна Павлова.">
+              <p>Анна Павлова</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="features" data-test="features">
+        <h2 class="features__title title">Наши преимущества</h2>
+        <ul class="features__card-list">
+          <li class="features__card">
+            <span>900</span>
+            <span>кв/м</span>
+            <h3 class="features__card-title">Площадь</h3>
+            <p class="features__card-info">Занимайтесь без очередей и толкучки</p>
+          </li>
+
+          <li class="features__card">
+            <span>70</span>
+            <span>машин</span>
+            <h3 class="features__card-title">Собственная парковка</h3>
+            <p class="features__card-info">Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </li>
+
+          <li class="features__card">
+            <span>100</span>
+            <span>Тренажёров</span>
+            <p class="features__card-info">Современные тренажёры на все группы мышц</p>
+          </li>
+
+          <li class="features__card">
+            <span>350</span>
+            <span>мест</span>
+            <h3 class="features__card-title">Комфорт</h3>
+            <p class="features__card-info">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+
+          <li class="features__card">
+            <span>5+</span>
+            <span>лет</span>
+            <h3 class="features__card-title">Тренерский опыт</h3>
+            <p class="features__card-info">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="offers" data-test="offers">
+        <h2 class="offers__title title">Акции</h2>
+        <div class="offers__banner">
+          <div>
+            <span>Год</span>
+            <span>4999</span>
+            <p class="">Безлимитный абонемент в тренажёрный зал</p>
+            <a href="#">подробнее</a>
+          </div>
+          <img src="anna.jpg" alt="Анна Павлова.">
+        </div>
+        <ul class="offers__card-list">
+          <li class="offers__card">
+            <h3 class="offers__card-title">Месяц бесплатно</h3>
+            <p class="offers__card-info">Приведи друга, получи абонемент в подарок</p>
+            <a href="#">подробнее</a>
+          </li>
+          <li class="offers__card">
+            <h3 class="offers__card-title">Скидка 20%</h3>
+            <p class="offers__card-info">Корпоративный фитнес с командой</p>
+            <a href="#">подробнее</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="faq" data-test="faq">
+        <h2 class="faq__title title">Вопросы и ответы</h2>
+
+        <ul class="faq__accordion accordion">
+          <li class="accordion__item">
+            <button class="accordion__title">Как стать членом фитнес-центра?</button>
+            <div class="accordion__content">
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <button class="accordion__title">Где можно посмотреть расписание?</button>
+            <div class="accordion__content">
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <button class="accordion__title">Есть кулеры в центре? Предоставляются полотенца?</button>
+            <div class="accordion__content">
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <button class="accordion__title">Сколько тренеров работает в клубе и какова их квалификация?</button>
+            <div class="accordion__content">
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+
+</html>
+
+    <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
+    примеры требуемых атрибутов data-test="*"
     <div data-test="hero">hero</div>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
@@ -25,8 +255,5 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+    <div data-test="footer">footer</div> -->
 
-</html>
