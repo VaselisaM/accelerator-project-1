@@ -1,0 +1,141 @@
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.video iframe {
+  width: 320px;
+  height: 170px;
+
+  @media (min-width: $tablet) {
+    width: 270px;
+    height: 170px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 360px;
+    height: 230px;
+  }
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, $base-gradient);
+
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border: 2px solid $red;
+    border-radius: 50%;
+    background: none;
+    opacity: 0.2;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    mask-image: url("../../__spritemap#sprite-polygon-view");
+    background-color: $base-white;
+    mask-size: 12px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 72px;
+    height: 72px;
+
+    &:before {
+      width: 100px;
+      height: 100px;
+    }
+
+    &:after {
+      width: 17px;
+      height: 17px;
+      mask-image: url("../../__spritemap#sprite-polygon-view");
+      mask-size: 17px 17px;
+    }
+
+    &:hover {
+      background: $base-white;
+
+      &:before {
+        border: 2px solid $base-darker;
+        opacity: 0.6;
+      }
+
+      &:after {
+        background-color: $base-darker;
+        opacity: 0.6;
+      }
+    }
+
+    &:focus {
+      background: #c8c9cc;
+
+      &:before {
+        border: 2px solid $base-darker;
+        opacity: 1;
+      }
+
+      &:after {
+        background-color: $base-darker;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      width: 58px;
+      height: 58px;
+      background: $base-white;
+
+      &:before {
+        border: 2px solid $base-darker;
+        opacity: 1;
+      }
+
+      &:after {
+        background-color: $base-darker;
+        opacity: 1;
+      }
+    }
+
+    &:disabled {
+      background: $base-white;
+
+      &:before {
+        border: 2px solid $base-darker;
+        opacity: 0.4;
+      }
+
+      &:after {
+        background-color: $base-darker;
+        opacity: 0.4;
+      }
+    }
+  }
+}

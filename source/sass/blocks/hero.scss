@@ -23,6 +23,26 @@
   @media (min-width: $desktop) {
     font-size: 26px;
     line-height: 26px;
+
+    &:hover {
+      color: $base-darker;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      color: $base-darker;
+    }
+
+    &:active {
+      padding: 2.5px 0;
+      color: $base-darker;
+      border-bottom: 1px solid $base-darker;
+    }
+
+    &:disabled {
+      color: $light-grey;
+      opacity: 0.5;
+    }
   }
 }
 

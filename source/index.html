@@ -26,7 +26,7 @@
             <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
           </div>
           <picture class="hero__image">
-            <source type="image/webp" media="(min-width: 1365px)" srcset="img/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
             <img src="img/hero-tablet@1x.webp" srcset="img/hero-tablet@2x.webp 2x" width="324" height="390" alt="Тренер SUPERGYM.">
           </picture>
           <a class="hero__button button link" href="#">Купить абонемент</a>
@@ -34,12 +34,33 @@
       </section>
 
       <section class="about" data-test="about">
-        <h2 class="about__title title">Тренажёрный зал</h2>
-        <p class="about__lead lead">Просторный зал площадью 900 кв/м</p>
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-        <img src="zal.jpg" alt="Тренажёрный зал.">
-        <!-- <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" frameborder="0"></iframe> -->
+        <div class="about__data-wrapper container">
+          <h2 class="about__title title">Тренажёрный зал</h2>
+          <p class="about__lead lead">Просторный зал площадью 900 кв/м</p>
+          <div class="about__text">
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес
+              центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+        </div>
+        <div class="about__video-wrapper">
+          <picture class="about__image">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x" width="678" height="345">
+            <img src="img/gym-mobile@1x.webp" srcset="img/gym-mobile@2x.webp 2x" width="320" height="280" alt="Тренажёрный зал.">
+          </picture>
+          <div class="about__video video" data-video="9TZXsZItgdw">
+            <picture class="about__preview">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" width="360" height="230">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" width="270" height="170">
+              <img src="img/video-mobile@1x.webp" srcset="img/video-mobile@2x.webp 2x" width="320" height="170" alt="Тренажёрный зал.">
+            </picture>
+            <button class="video__button" type="button">
+              <span class="visually-hidden">Включить видео.</span>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="price" data-test="price">
