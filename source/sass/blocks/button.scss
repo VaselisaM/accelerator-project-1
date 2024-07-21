@@ -11,31 +11,63 @@
   line-height: 12px;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   color: $base-white;
   border: 2px solid $base-white;
 
   cursor: pointer;
 
-  @media (min-width: $desktop) {
-    &:hover {
-      color: $base-blue;
-      background-color: $base-white;
-    }
+  &--dark-background {
+    @media (min-width: $desktop) {
+      &:hover {
+        color: $base-blue;
+        background-color: $base-white;
+      }
 
-    &:focus {
-      color: $base-blue;
-      background-color: $focus-white;
-      border: 2px solid $black;
-    }
+      &:focus {
+        color: $base-blue;
+        background-color: $focus-white;
+        border: 2px solid $black;
+      }
 
-    &:active {
-      color: $base-darker;
-      background-color: $base-white;
+      &:active {
+        color: $base-darker;
+        background-color: $base-white;
+      }
     }
+  }
 
-    &:disabled {
-      opacity: 0.5;
-      border: 2px solid $base-white;
+  &--light-background {
+    color: $base-darker;
+    border: 2px solid $base-darker;
+
+    @media (min-width: $desktop) {
+      &:hover {
+        color: $base-white;
+        background: linear-gradient(90deg, $base-gradient);
+      }
+
+      &:focus {
+        color: $base-white;
+        background: linear-gradient(90deg, #ed0233cc 0%, #003eb7cc 100%);
+        border: 2px solid $black;
+      }
+
+      &:active {
+        color: #ffffffb3;
+        background: linear-gradient(90deg, $base-gradient);
+        border: none;
+      }
     }
+  }
+
+  &--dark-background.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--light-background.disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }

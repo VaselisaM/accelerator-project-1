@@ -123,19 +123,20 @@
         opacity: 1;
       }
     }
+  }
+}
 
-    &:disabled {
-      background: $base-white;
+.video__button.disabled {
+  background: $base-white;
+  pointer-events: none;
 
-      &:before {
-        border: 2px solid $base-darker;
-        opacity: 0.4;
-      }
+  &:before {
+    border: 2px solid $base-darker;
+    opacity: 0.4;
+  }
 
-      &:after {
-        background-color: $base-darker;
-        opacity: 0.4;
-      }
-    }
+  &:after {
+    background-color: $base-darker;
+    opacity: 0.4;
   }
 }

@@ -3,9 +3,38 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+// const tabsButton = document.querySelectorAll('.price__tab-button');
+
+
+// tabsButton.forEach(function(item) {
+//   item.addEventListener('click', onTabsButtonClick);
+//   let currentButton = item;
+//   function onTabsButtonClick () {
+//     tabsButton.forEach(function(item) {
+//       item.classList.remove('active')
+//     });
+//     currentButton.classList.add('active');
+//   }
+
+// });
+
+const priceCards = document.querySelectorAll('.tab-card__price');
+// const cardPriceData = cardPrice.innerHTML;
+// let cardPriceShadow = cardPrice.innerHTML;
+// console.log(priceCards);
+
+const getCardPriceShadow = () => {
+  priceCards.forEach((item) => {
+    const cardPriceShadow = item.innerHTML;
+    item.setAttribute('data-content', `${cardPriceShadow}`);
+  });
+};
+
+getCardPriceShadow();
+
 const video = document.querySelector('.video');
-const button = document.querySelector('.video__button');
-const picture = document.querySelector('.about__preview');
+const playVideoButton = document.querySelector('.video__button');
+const videoPreview = document.querySelector('.about__preview');
 
 const idVideo = video.dataset.video;
 
@@ -16,15 +45,15 @@ const createIframe = () => {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('src', `https://www.youtube.com/embed/${idVideo}`);
   iframe.setAttribute('allow', 'autoplay; encrypted-media');
-  picture.remove();
-  button.remove();
+  videoPreview.remove();
+  playVideoButton.remove();
 
-  button.removeEventListener('click', onButtonClick);
+  playVideoButton.removeEventListener('click', onPlayVideoButtonClick);
 };
 
-function onButtonClick () {
+function onPlayVideoButtonClick () {
   createIframe();
 }
 
-button.addEventListener('click', onButtonClick);
+playVideoButton.addEventListener('click', onPlayVideoButtonClick);
 

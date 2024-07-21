@@ -1,0 +1,109 @@
+.tab-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+  padding: 50px 42px;
+  text-align: center;
+  background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    box-sizing: border-box;
+    row-gap: 22px;
+    margin: 0 auto;
+    padding: 65px;
+    width: 380px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 17px;
+  }
+}
+
+.tab-card__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.tab-card__session {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.tab-card__price {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 45px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #103aae;
+  gap: 10px;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    gap: 14px;
+    padding-top: 60px;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  &:after {
+    display: block;
+    width: 24px;
+    height: 33px;
+    background-image: url("../../__spritemap#sprite-ruble-view");
+    content: "";
+
+    @media (min-width: $tablet) {
+      width: 30px;
+      height: 42px;
+    }
+  }
+
+
+  &:before {
+    content: attr(data-content);
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120px;
+    color: $light-grey;
+    opacity: 0.48;
+
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet) {
+      top: 40%;
+      font-size: 100px;
+      line-height: 150px;
+    }
+  }
+}
+
+.tab-card__button {
+  padding: 25px;
+}

@@ -29,7 +29,7 @@
             <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
             <img src="img/hero-tablet@1x.webp" srcset="img/hero-tablet@2x.webp 2x" width="324" height="390" alt="Тренер SUPERGYM.">
           </picture>
-          <a class="hero__button button link" href="#">Купить абонемент</a>
+          <a class="hero__button button button--dark-background" href="#">Купить абонемент</a>
         </div>
       </section>
 
@@ -65,51 +65,56 @@
 
       <section class="price" data-test="price">
         <h2 class="price__title title">Абонементы</h2>
-        <ul class="price__tabs">
-          <li class="price__tab">1 месяц</li>
-          <li class="price__tab">6 месяцев</li>
-          <li class="price__tab">12 месяцев</li>
+        <ul class="price__tabs list">
+          <li class="price__tab-button active">1 месяц</li>
+          <li class="price__tab-button">6 месяцев</li>
+          <li class="price__tab-button">12 месяцев</li>
         </ul>
-        <ul class="price__tabs-item">
+        <ul class="price__tabs-item container list">
           <li class="price__tab-item tab-card">
-            <h3 class="tab-card">С тренером</h3>
+            <h3 class="tab-card__title">С тренером</h3>
             <p class="tab-card__session">12 занятий</p>
             <p class="tab-card__price">5000</p>
-            <a href="#" class="tab-card__button button">Купить абонемент</a>
+            <span class="visually-hidden">рублей.</span>
+            <a href="#" class="tab-card__button button button--light-background">Купить абонемент</a>
           </li>
 
           <li class="price__tab-item tab-card">
-            <h3 class="tab-card">Дневной</h3>
+            <h3 class="tab-card__title">Дневной</h3>
             <p class="tab-card__session">с 8:00 до 17:00</p>
             <p class="tab-card__price">1700</p>
-            <a href="#" class="tab-card__button button">Купить абонемент</a>
+            <span class="visually-hidden">рублей.</span>
+            <a href="#" class="tab-card__button button button--light-background">Купить абонемент</a>
           </li>
 
           <li class="price__tab-item tab-card">
-            <h3 class="tab-card">Полный день</h3>
+            <h3 class="tab-card__title">Полный день</h3>
             <p class="tab-card__session">с 8:00 до 22:00</p>
             <p class="tab-card__price">2700</p>
-            <a href="#" class="tab-card__button button">Купить абонемент</a>
+            <span class="visually-hidden">рублей.</span>
+            <a href="#" class="tab-card__button button button--light-background">Купить абонемент</a>
           </li>
         </ul>
       </section>
 
-      <section class="games" data-test="games">
+      <section class="games container" data-test="games">
         <div class="games__banner banner">
-          <h2 class="banner__title">SUPER GAMES</h2>
-          <table class="banner__table">
-            <tr>
-              <th>Дата</th>
-              <th>Время</th>
-            </tr>
-            <tr>
-              <td><span>7</span><span>Марта</span><span>2019</span></td>
-              <td>12:00</td>
-            </tr>
-          </table>
-          <p>Ежегодные соревнования по CrossFit</p>
-          <a href="#" class="banner__button button">заполнить заявку</a>
-          <img src="chel.jpg" alt="Т.">
+          <div class="banner__info-wrapper">
+            <h2 class="banner__title">SUPER GAMES</h2>
+            <div class="banner__info">
+              <div class="banner__table banner__table--date">
+                <span class="banner__info-title banner__info-title--date">Дата<span class="visually-hidden">события.</span></span>
+                <span class="banner__info-data banner__info-data--date">7</span>
+                <span>Марта<br>2019<span class="visually-hidden">года.</span></span>
+              </div>
+              <div class="banner__table">
+                <span class="banner__info-title">Время</span>
+                <span class="banner__info-data">12:00</span>
+              </div>
+            </div>
+            <p class="banner__text">Ежегодные соревнования по CrossFit</p>
+            <a href="#" class="banner__button button">заполнить заявку</a>
+          </div>
         </div>
         <div class="games__juri juri" data-test="juri">
           <h2 class="juri__title title">Жюри</h2>

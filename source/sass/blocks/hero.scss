@@ -38,12 +38,13 @@
       color: $base-darker;
       border-bottom: 1px solid $base-darker;
     }
-
-    &:disabled {
-      color: $light-grey;
-      opacity: 0.5;
-    }
   }
+}
+
+.hero__phone.disabled {
+  color: $light-grey;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .hero__logo {
