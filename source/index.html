@@ -12,7 +12,7 @@
     <main>
       <section class="hero" data-test="hero">
         <header class="hero__header container">
-          <img class="hero__logo" src="/__spritemap#sprite-logo-view" width="100" height="22" alt="SUPERGYM.">
+          <img class="hero__logo logo" src="/__spritemap#sprite-logo-view" width="100" height="22" alt="SUPERGYM.">
           <a class="hero__phone link" href="tel:+78005555555">8 800 555-55-55</a>
         </header>
         <div class="hero__wrapper container">
@@ -217,19 +217,19 @@
             <div>
               <b>Год<span>4999</span></b>
               <p class="">Безлимитный абонемент в тренажёрный зал</p>
-              <a class="offers__link" href="#">подробнее</a>
+              <a class="offers__link link" href="#">подробнее</a>
             </div>
           </div>
           <ul class="offers__card-list list container">
             <li class="offers__card">
               <h3>Месяц бесплатно</h3>
               <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="offers__link offers__link--card" href="#">подробнее</a>
+              <a class="offers__link offers__link--card link" href="#">подробнее</a>
             </li>
             <li class="offers__card">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с командой</p>
-              <a class="offers__link offers__link--card" href="#">подробнее</a>
+              <a class="offers__link offers__link--card link" href="#">подробнее</a>
             </li>
           </ul>
         </section>
@@ -265,12 +265,46 @@
           </li>
         </ul>
       </section>
-
-      <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
     </main>
+    <footer class="footer" data-test="footer">
+      <div class="footer__container container">
+        <img class="footer__logo logo" src="/__spritemap#sprite-logo-view" width="100" height="22" alt="SUPERGYM.">
+        <ul class="footer__navigation-list list">
+          <li class="footer__navigation">
+            <a class="footer__navigation-link link" href="#">Услуги</a>
+          </li>
+          <li class="footer__navigation">
+            <a class="footer__navigation-link link" href="#">Абонементы</a>
+          </li>
+          <li class="footer__navigation">
+            <a class="footer__navigation-link link" href="#">Акции</a>
+          </li>
+          <li class="footer__navigation">
+            <a class="footer__navigation-link link" href="#">Тренеры</a>
+          </li>
+          <li class="footer__navigation">
+            <a class="footer__navigation-link link" href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list list">
+          <li class="footer__social">
+            <a href="#" class="footer__social-link footer__social-link--vk link">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link footer__social-link--ok link">
+              <span class="visually-hidden">Одноклассники.</span>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link footer__social-link--reddit link">
+              <span class="visually-hidden">Reddit</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script type="module" src="js/main.js"></script>
   </body>
