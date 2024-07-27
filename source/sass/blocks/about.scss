@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet) {
     padding-top: 61px;
-    padding-bottom: 82px;
+    padding-bottom: 85px;
     text-align: center;
   }
 
@@ -104,5 +104,10 @@
 }
 
 .about__image img {
+  display: block;
   margin: 0 auto 36px;
+}
+
+.about__preview img {
+  display: block;
 }

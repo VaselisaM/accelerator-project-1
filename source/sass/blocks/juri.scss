@@ -1,0 +1,16 @@
+.juri {
+  text-align: center;
+}
+
+.juri__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 46px;
+  }
+}
+
+.juri__card-list {
+  display: flex;
+  flex-wrap: wrap;
+}

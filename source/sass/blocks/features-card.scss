@@ -1,0 +1,155 @@
+.features-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  color: $base-darker;
+  text-align: center;
+  padding: 9px 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    padding: 19px 0;
+    width: 324px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto auto;
+    column-gap: 15px;
+    row-gap: 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 150px auto;
+    padding: 0;
+    column-gap: 0;
+    grid-template-rows: 30px auto;
+    width: 360px;
+
+    &:nth-child(n+4) {
+      border-top: 2px solid #d10a4233;
+      padding-top: 40px;
+    }
+  }
+}
+
+.features-card--accent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px 0;
+  text-align: center;
+  background-color: #1c3374;
+  color: #ffffff;
+  margin: 15px 0;
+  min-height: 225px;
+
+  @media (min-width: $tablet) {
+    width: 320px;
+    row-gap: 25px;
+    padding: 35px;
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 22px;
+    grid-column: span 1;
+    grid-row: span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 360px;
+    padding: 58px 35px;
+    row-gap: 30px;
+  }
+}
+
+.features-card b {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  background-image: linear-gradient(129deg, #d10a42 20%, #0041ca 50%, #0041ca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (min-width: $tablet) {
+    grid-row: span 2;
+    font-size: 70px;
+    line-height: 70px;
+    row-gap: 1px;
+  }
+}
+
+.features-card--accent b {
+  row-gap: 5px;
+  background-image: linear-gradient(90deg, $base-white 0%, $base-white 100%);
+
+  @media (min-width: $tablet) {
+    row-gap: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 10px;
+  }
+}
+
+.features-card b span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background-image: linear-gradient(90deg, #2e35ac 0%, #2e35ac 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (min-width: $tablet) {
+    line-height: 22px;
+  }
+}
+
+
+.features-card--accent b span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  background-image: linear-gradient(90deg, $base-white 0%, $base-white 100%);
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.features-card h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.features-card p {
+  margin: 0 auto;
+  width: 230px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+  }
+}

@@ -12,7 +12,7 @@
     <main>
       <section class="hero" data-test="hero">
         <header class="hero__header container">
-          <img class="hero__logo" src="/__spritemap#sprite-logo-view" width="100" height="54" alt="SUPERGYM.">
+          <img class="hero__logo" src="/__spritemap#sprite-logo-view" width="100" height="22" alt="SUPERGYM.">
           <a class="hero__phone link" href="tel:+78005555555">8 800 555-55-55</a>
         </header>
         <div class="hero__wrapper container">
@@ -113,115 +113,127 @@
               </div>
             </div>
             <p class="banner__text">Ежегодные соревнования по CrossFit</p>
-            <a href="#" class="banner__button button">заполнить заявку</a>
+            <a href="#" class="banner__button button button--dark-background">заполнить заявку</a>
           </div>
         </div>
         <div class="games__juri juri" data-test="juri">
           <h2 class="juri__title title">Жюри</h2>
-          <ul class="juri__card-list">
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
+          <button class="juri__button" type="button"><span class="visually-hidden">Назад.</span></button>
+          <ul class="juri__card-list slider list">
+            <li class="juri__card juri-card">
+              <img class="juri-card__image" src="img/juri-1@1x.webp" srcset="img/juri-1@2x.webp 2x" width="260" height="300" alt="Анна Павлова.">
+              <div class="juri-card__backface">
+                <h3 class="juri-card__title">Анна Павлова</h3>
+                <p class="juri-card__type">CrossFit</p>
+                <ul class="juri-card__achieve-list">
+                  <li class="juri-card__achieve">Certified Level 3 Trainer</li>
+                  <li class="juri-card__achieve">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri-card__achieve">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
+
+            <li class="juri__card juri-card">
+              <img class="juri-card__image" src="img/juri-2@1x.webp" srcset="img/juri-2@2x.webp 2x" width="260" height="300" alt="Алексей Лавров.">
+              <div class="juri-card__backface">
+                <h3 class="juri-card__title">Алексей Лавров</h3>
+                <p class="juri-card__type">CrossFit</p>
+                <ul class="juri-card__achieve-list">
+                  <li class="juri-card__achieve">Certified Level 3 Trainer</li>
+                  <li class="juri-card__achieve">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri-card__achieve">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
+
+            <li class="juri__card juri-card">
+              <img class="juri-card__image" src="img/juri-3@1x.webp" srcset="img/juri-3@2x.webp 2x" width="260" height="300" alt="Александр Пашков.">
+              <div class="juri-card__backface">
+                <h3 class="juri-card__title">Александр Пашков</h3>
+                <p class="juri-card__type">CrossFit</p>
+                <ul class="juri-card__achieve-list">
+                  <li class="juri-card__achieve">Certified Level 3 Trainer</li>
+                  <li class="juri-card__achieve">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri-card__achieve">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
-            </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
-            </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
-            </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
-            </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
-            </li>
-            <li class="juri__card">
-              <img src="anna.jpg" alt="Анна Павлова.">
-              <p>Анна Павлова</p>
+
+            <li class="juri__card juri-card">
+              <img class="juri-card__image" src="img/juri-4@1x.webp" srcset="img/juri-4@2x.webp 2x" width="260" height="300" alt="Анастасия Тарасова.">
+              <div class="juri-card__backface">
+                <h3 class="juri-card__title">Анастасия Тарасова</h3>
+                <p class="juri-card__type">CrossFit</p>
+                <ul class="juri-card__achieve-list">
+                  <li class="juri-card__achieve">Certified Level 3 Trainer</li>
+                  <li class="juri-card__achieve">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri-card__achieve">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
           </ul>
+          <button class="juri__button" type="button"><span class="visually-hidden">Вперед.</span></button>
         </div>
       </section>
 
       <section class="features" data-test="features">
         <h2 class="features__title title">Наши преимущества</h2>
-        <ul class="features__card-list">
-          <li class="features__card">
-            <span>900</span>
-            <span>кв/м</span>
-            <h3 class="features__card-title">Площадь</h3>
-            <p class="features__card-info">Занимайтесь без очередей и толкучки</p>
+        <ul class="features__card-list list">
+          <li class="features__card features-card">
+            <b>900<span>кв/м</span></b>
+            <h3>Площадь</h3>
+            <p>Занимайтесь без очередей и толкучки</p>
           </li>
 
-          <li class="features__card">
-            <span>70</span>
-            <span>машин</span>
-            <h3 class="features__card-title">Собственная парковка</h3>
-            <p class="features__card-info">Вы всегда найдёте место для своей машины на нашей парковке</p>
+          <li class="features__card features-card">
+            <b>70<span>машин</span></b>
+            <h3>Собственная парковка</h3>
+            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
           </li>
 
-          <li class="features__card">
-            <span>100</span>
-            <span>Тренажёров</span>
-            <p class="features__card-info">Современные тренажёры на все группы мышц</p>
+          <li class="features__card features-card features-card--accent">
+            <b>100<span>Тренажёров</span></b>
+            <p>Современные тренажёры на все группы мышц</p>
           </li>
 
-          <li class="features__card">
-            <span>350</span>
-            <span>мест</span>
-            <h3 class="features__card-title">Комфорт</h3>
-            <p class="features__card-info">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          <li class="features__card features-card">
+            <b>350<span>мест</span></b>
+            <h3>Комфорт</h3>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </li>
 
-          <li class="features__card">
-            <span>5+</span>
-            <span>лет</span>
-            <h3 class="features__card-title">Тренерский опыт</h3>
-            <p class="features__card-info">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          <li class="features__card features-card">
+            <b>5+<span>лет</span></b>
+            <h3 class="features-card__title">Тренерский опыт</h3>
+            <p class="features-card__info">Добивайтесь своих целей быстрее с профессиональным тренером</p>
           </li>
         </ul>
       </section>
 
-      <section class="offers" data-test="offers">
-        <h2 class="offers__title title">Акции</h2>
-        <div class="offers__banner">
-          <div>
-            <span>Год</span>
-            <span>4999</span>
-            <p class="">Безлимитный абонемент в тренажёрный зал</p>
-            <a href="#">подробнее</a>
+      <div data-test="offers">
+        <section class="offers">
+          <h2 class="offers__title title">Акции</h2>
+          <div class="offers__banner banner banner--offers container">
+            <div>
+              <b>Год<span>4999</span></b>
+              <p class="">Безлимитный абонемент в тренажёрный зал</p>
+              <a class="offers__link" href="#">подробнее</a>
+            </div>
           </div>
-          <img src="anna.jpg" alt="Анна Павлова.">
-        </div>
-        <ul class="offers__card-list">
-          <li class="offers__card">
-            <h3 class="offers__card-title">Месяц бесплатно</h3>
-            <p class="offers__card-info">Приведи друга, получи абонемент в подарок</p>
-            <a href="#">подробнее</a>
-          </li>
-          <li class="offers__card">
-            <h3 class="offers__card-title">Скидка 20%</h3>
-            <p class="offers__card-info">Корпоративный фитнес с командой</p>
-            <a href="#">подробнее</a>
-          </li>
-        </ul>
-      </section>
+          <ul class="offers__card-list list container">
+            <li class="offers__card">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a class="offers__link offers__link--card" href="#">подробнее</a>
+            </li>
+            <li class="offers__card">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a class="offers__link offers__link--card" href="#">подробнее</a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section class="faq" data-test="faq">
         <h2 class="faq__title title">Вопросы и ответы</h2>

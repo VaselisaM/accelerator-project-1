@@ -4,7 +4,7 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 21px;
-  min-height: 56px;
+  min-height: 60px;
   font-family: $primary-font;
   font-weight: 700;
   font-size: 12px;
@@ -69,5 +69,9 @@
   &--light-background.disabled {
     opacity: 0.3;
     pointer-events: none;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 66px;
   }
 }
