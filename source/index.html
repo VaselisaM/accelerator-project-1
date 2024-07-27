@@ -236,9 +236,9 @@
       </div>
 
       <section class="faq" data-test="faq">
-        <h2 class="faq__title title">Вопросы и ответы</h2>
+        <h2 class="faq__title title container">Вопросы и ответы</h2>
 
-        <ul class="faq__accordion accordion">
+        <ul class="faq__accordion accordion container">
           <li class="accordion__item">
             <button class="accordion__title">Как стать членом фитнес-центра?</button>
             <div class="accordion__content">
@@ -265,6 +265,79 @@
           </li>
         </ul>
       </section>
+
+      <section class="reviews container" data-test="reviews">
+        <h2 class="reviews__title title">Отзывы</h2>
+        <ul class="reviews__card-list">
+          <li class="reviews__card">
+            <img src="img/juri-4@1x.webp" srcset="img/juri-4@2x.webp 2x" width="68" height="68" alt="Анна Орлова.">
+            <h3>Анна Орлова</h3>
+            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
+              персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </li>
+          <li class="reviews__card">
+            <img src="img/juri-4@1x.webp" srcset="img/juri-4@2x.webp 2x" width="68" height="68" alt="Анна Орлова.">
+            <h3>Анна Орлова</h3>
+            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
+              персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </li>
+          <li class="reviews__card">
+            <img src="img/juri-4@1x.webp" srcset="img/juri-4@2x.webp 2x" width="68" height="68" alt="Анна Орлова.">
+            <h3>Анна Орлова</h3>
+            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
+              персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </li>
+        </ul>
+      </section>
+
+      <div data-test="form">
+        <section class="form">
+          <div class="form__container">
+            <h2 class="form__title title">Бесплатное занятие</h2>
+            <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="form__fieldset">
+                <ul class="form__list list">
+                  <li class="form__item">
+                    <label for="name">
+                      <span class="visually-hidden">Ваше имя.</span>
+                    </label>
+                    <input class="form__input" type="text" name="name" placeholder="Имя" id="name" pattern="[A-Za-zА-Яа-яЁё]{20}" required>
+                  </li>
+                  <li class="form__item">
+                    <label for="phone">
+                      <span class="visually-hidden">Ваш номер телефона.</span>
+                    </label>
+                    <input class="form__input" type="tel" name="phone" placeholder="Телефон" id="phone" pattern="[0-9]{11}" required>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="form__button button button--dark-background" type="submit">отправить</button>
+            </form>
+          </div>
+          <div class="form__contacts contacts">
+            <h2 class="contacts__title title">Контакты</h2>
+            <ul class="contacts__list list">
+              <li class="contacts__item">
+                <h3 class="contacts__item-title">Адрес:</h3>
+                <address class="contacts__info">г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+              <li class="contacts__item contacts__item--time">
+                <h3 class="contacts__item-title">График работы:</h3>
+                <p class="contacts__info">Пн-Вс: с <time>8:00</time> до <time>22:00</time></p>
+              </li>
+              <li class="contacts__item contacts__item--phone">
+                <h3 class="contacts__item-title">Телефон:</h3>
+                <a class="contacts__info link" href="tel:+78005555555">8 800 555-55-55</a>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <h3 class="contacts__item-title">Email:</h3>
+                <a class="contacts__info link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
     </main>
     <footer class="footer" data-test="footer">
       <div class="footer__container container">
